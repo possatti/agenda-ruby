@@ -1,11 +1,11 @@
-Agenda em Ruby
-==============
+# Agenda em Ruby
+Um programa simples para gerenciar contatos em Ruby.
 
-Descrição
----------
-Um programa simples para gerenciar contatos em Ruby. Sendo a minha primeira aplicação em Ruby, a criei para praticar e testar a linguagem Ruby.
-Para executar a aplicação, execute o arquivo 'app.rb', que está na raiz do repositório.
+## Descrição
+Sendo a minha primeira aplicação em Ruby, a criei para praticar e testar a linguagem. Para executar a aplicação, use o arquivo `app.rb`, que está na raiz do repositório.
 
-Adquirir o Ruby
----------------
-Os passos para a instalação do Ruby, podem ser encontrados na página oficial da linguagem: https://www.ruby-lang.org/en/downloads/
+## Ruby
+Os passos para a [instalação][ruby-downloads] do Ruby, e bem como a sua [documentação][ruby-doc], podem ser encontrados na [página oficial da linguagem][ruby-lang].
+[ruby-lang]: https://www.ruby-lang.org/
+[ruby-downloads]:https://www.ruby-lang.org/en/downloads/
+[ruby-doc]:http://www.ruby-doc.org/core-2.0.0/
