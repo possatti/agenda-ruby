@@ -7,12 +7,13 @@ class Agenda
 		@contatos << contato
 	end
 
-	def remover(contato)
-		@contatos - [contato]
+	def remover(nome)
+		@contatos.reject! { |contato| contato.getNome == nome }
 	end
 
 	def encontrar(nome)
 		selecionados = @contatos.select { |contato| contato.getNome == nome }
+		#$puts selecionados
 		selecionados.first
 
 		# Solução de uma tacada só:

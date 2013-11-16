@@ -19,6 +19,6 @@ class Contato
 
 	def to_s
 		#@name.to_s + ": " + @number.to_s + ", " + @email.to_s
-		"#{@nome}: #{@telefone}, #{@email}"
+		"NOME: #{@nome};\t TEL.: #{@telefone};\t E-MAIL: #{@email};"
 	end
 end

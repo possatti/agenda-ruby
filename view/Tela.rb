@@ -4,7 +4,7 @@ class Tela
 	end
 
 	def requerir(msg)
-		print msg
+		print " >> Entre com " + msg + ": "
 		gets.chomp!	
 	end
 end

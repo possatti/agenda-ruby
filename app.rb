@@ -2,20 +2,8 @@ require "controller.rb"
 
 controlador = Controller.new
 
-# class Exem
-# 	def initialize
-# 		@nome = "lucas"
-# 	end
-
-# 	# def getNome
-# 	# 	@nome
-# 	# end
-# end
-
-# myinst = Exem.new
-# puts myinst.nome
-
 begin
+	puts
 	puts "Agenda:"
 	puts " [n] - Novo contato"
 	puts " [a] - Apagar um contato"
