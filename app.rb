@@ -1,11 +1,43 @@
-require("model/Contato.rb")
-require("model/Agenda.rb")
-require("control/controller.rb")
+require "controller.rb"
 
-control = Controller.new
-control.novoContato
+controlador = Controller.new
 
-#agenda = Agenda.new
-#agenda.adcionar(Contato.new("Lucas", "1234", "lucas@possatti.com"))
-#agenda.adcionar(Contato.new("Mateus", "5678", "mateus@possatti.com"))
-#puts agenda
+# class Exem
+# 	def initialize
+# 		@nome = "lucas"
+# 	end
+
+# 	# def getNome
+# 	# 	@nome
+# 	# end
+# end
+
+# myinst = Exem.new
+# puts myinst.nome
+
+begin
+	puts "Agenda:"
+	puts " [n] - Novo contato"
+	puts " [a] - Apagar um contato"
+	puts " [l] - Listar contatos registrados"
+	puts " [s] - Sair"
+	puts
+	print "Selecione a operação: "
+	escolha = gets.chomp.downcase
+
+	case escolha
+		when "n"
+			controlador.novoContato
+		when "a"
+			controlador.apagarContato
+		when "l"
+			controlador.listarContatos
+		when "s"
+			break
+		else
+			puts " [!] Opção inválida."
+	end
+	
+end while escolha != 0
+
+puts "Terminando a aplicação."
