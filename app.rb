@@ -1,3 +1,5 @@
+#!/usr/bin/ruby
+
 require "controller.rb"
 
 controlador = Controller.new
@@ -6,6 +8,7 @@ begin
 	puts
 	puts "Agenda:"
 	puts " [n] - Novo contato"
+	puts " [e] - Encontrar contato"
 	puts " [a] - Apagar um contato"
 	puts " [l] - Listar contatos registrados"
 	puts " [s] - Sair"
@@ -16,6 +19,8 @@ begin
 	case escolha
 		when "n"
 			controlador.novoContato
+		when "e"
+			controlador.encontrarContato
 		when "a"
 			controlador.apagarContato
 		when "l"
